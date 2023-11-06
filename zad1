@@ -1,7 +1,0 @@
-def wiadomość (Name, Surname):
-    return f'Cześć {Name} {Surname}!'
-    
-Name = input("Podaj imię: ")
-Surname = input("Podaj nazwisko: ")
-wynik = wiadomość(Name, Surname)
-print(wynik)
