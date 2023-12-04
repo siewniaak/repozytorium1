@@ -1,0 +1,10 @@
+def rezultat(liczba):
+    return liczba % 2 == 0
+
+liczba = int(input("Podaj liczbę całkowitą: "))
+rezulatat1 = rezultat(liczba)
+
+if rezultat:
+    print("To jest liczba parzysta!")
+else:
+    print("To jest liczba nieparzysta!")
