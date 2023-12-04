@@ -1,0 +1,7 @@
+def mnozenie(a, b):
+    return a * b
+
+liczba1 = int(input("Podaj pierwszą liczbę: "))
+liczba2 = int(input("Podaj drugą liczbę: "))
+wynik = mnozenie(liczba1, liczba2)
+print("Wynik mnożenia 2 liczb to:", wynik)
