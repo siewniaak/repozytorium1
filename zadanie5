@@ -1,0 +1,22 @@
+def wartość(input_list, value):
+    return value in input_list
+
+lista = [1, 2, 3, 4, 5]
+
+sprawdz = int(input("Podaj wartość do sprawdzenia:"))
+wynik = wartość(lista, sprawdz)
+print("Czy ten wynik jest w liście? Oczywiscie, że:", wynik)
+
+"""ZADANIE 6"""
+
+def lista(lista1, lista2):
+    polaczona_lista = lista1 + lista2
+    polaczona_lista = list(set(polaczona_lista))
+    polaczona_lista = [x**3 for x in polaczona_lista]
+    return polaczona_lista
+
+lista1 = [5, 10, 15, 20]
+lista2 = [10, 15, 20, 25]
+
+wynik = lista(lista1, lista2)
+print("Wynik:", wynik)
