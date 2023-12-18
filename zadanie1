@@ -1,7 +1,7 @@
-def wiadomość (Name, Surname):
-    return f'Cześć {Name} {Surname}!'
+def wiadomosc(name, surname):
+    return f'Cześć {name} {surname}!'
 
-Name = input("Podaj imię: ")
-Surname = input("Podaj nazwisko: ")
-wynik = wiadomość(Name, Surname)
+name = input("Podaj imię: ")
+surname = input("Podaj nazwisko: ")
+wynik = wiadomosc(name, surname)
 print(wynik)
