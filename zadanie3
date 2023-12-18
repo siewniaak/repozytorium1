@@ -1,10 +1,10 @@
-def rezultat(liczba):
+def czy_parzysta(liczba):
     return liczba % 2 == 0
 
-liczba = int(input("Podaj liczbę całkowitą: "))
-rezulatat1 = rezultat(liczba)
+moja_liczba = int(input("Podaj liczbę: "))
+wynik = czy_parzysta(moja_liczba)
 
-if rezultat:
-    print("To jest liczba parzysta!")
+if wynik:
+    print("Liczba parzysta")
 else:
-    print("To jest liczba nieparzysta!")
+    print("Liczba nieparzysta")
