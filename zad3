@@ -1,0 +1,33 @@
+class Nieruchomosc:
+    def __init__(self, adres, metraz, cena):
+        self.adres = adres
+        self.metraz = metraz
+        self.cena = cena
+
+    def __str__(self):
+        return f"Nieruchomość\nAdres: {self.adres}\nMetraż: {self.metraz} m²\nCena: {self.cena} zł\n"
+
+class Dom(Nieruchomosc):
+    def __init__(self, adres, metraz, cena, powierzchnia_dzialki, liczba_pokoi):
+        super().__init__(adres, metraz, cena)
+        self.powierzchnia_dzialki = powierzchnia_dzialki
+        self.liczba_pokoi = liczba_pokoi
+
+    def __str__(self):
+        return f"Dom\nAdres: {self.adres}\nMetraż: {self.metraz} m²\n" \
+               f"Cena: {self.cena} zł\nPowierzchnia działki: {self.powierzchnia_dzialki} m²\nLiczba pokoi: {self.liczba_pokoi}\n"
+
+class Mieszkanie(Nieruchomosc):
+    def __init__(self, adres, metraz, cena, pietro):
+        super().__init__(adres, metraz, cena)
+        self.pietro = pietro
+
+    def __str__(self):
+        return f"Mieszkanie\nAdres: {self.adres}\nMetraż: {self.metraz} m²\n" \
+               f"Cena: {self.cena} zł\nPiętro: {self.pietro}\n"
+
+dom1 = Dom("Jaworzno, ul. 3 Maja 10", 150, 500000, 300, 5)
+mieszkanie1 = Mieszkanie("Katowice, ul. Jerozolimska 4", 80, 250000, 2)
+
+print(dom1)
+print(mieszkanie1)
