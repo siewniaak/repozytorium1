@@ -1,7 +1,0 @@
-def wiadomosc(name, surname):
-    return f'Cześć {name} {surname}!'
-
-name = input("Podaj imię: ")
-surname = input("Podaj nazwisko: ")
-wynik = wiadomosc(name, surname)
-print(wynik)
