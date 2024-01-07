@@ -1,9 +1,0 @@
-def suma_wieksza_badz_rowna(a, b, c):
-    return a + b >= c
-
-liczba1 = int(input("Podaj pierwszą liczbę całkowitą: "))
-liczba2 = int(input("Podaj drugą liczbę całkowitą: "))
-liczba3 = int(input("Podaj trzecią liczbę całkowitą: "))
-
-wynik = suma_wieksza_badz_rowna(liczba1, liczba2, liczba3)
-print("Wynik - Suma dwóch pierwszych liczb jest większa lub równa trzeciej:", wynik)
